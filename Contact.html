@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="scripts/Contact.js"></script>
+<title>Contact Us</title>
+<style>
+
+*{box-sizing:border-box;}
+
+h3{color:purple;
+   font-style:italic;}
+
+div{border-radius:3px;
+    background-image:url("Assets/parchment.jpg");
+    padding:15px;}
+
+body{background-image:url("Assets/parchment.jpg");
+    }
+    
+article{margin-left:auto;
+        margin-right:auto;}
+
+header{text-align:center;
+       background-image:linear-gradient(to right, blue, tan);
+       height:5em;
+	   width:100%;
+	   color:antiquewhite;}
+	   
+h2{border:28px outset maroon;}
+
+input[type=text], input[type=email], input[type=url], input[type=tel], input[type=number]{width:25%;
+                                                                                          padding:10px;
+									                                                      margin:8px 0;
+									                                                      display:block;
+									                                                      border:3px solid black;
+									                                                      border-radius:5px;}
+									   
+input[type=submit]{width:15%;
+                   background-color:antiquewhite;
+					color:purple;
+				   padding:14px;
+					 margin-right:10px;
+					margin-left:30px;
+				   margin-top:20px;
+				   border:5px solid red;
+					 border-radius:4px;}
+										  
+input[type=submit]:hover{background-color:green;
+                         color:fuchsia;}
+						 
+legend{font-weight:bold;
+       font-style:italic;
+	   color:purple;}
+	   
+label{font-weight:bold;
+      color:green;}
+						
+.red{color:red;
+	 text-decoration:underline;
+	}		
+
+footer{background-color:black;
+       height:3em;
+	   width:100%;
+	    text-align:center;}	 
+		
+a:hover{color:fuchsia;}
+
+iframe{padding:0;
+       margin:0;
+	   border:none;
+	   background:none;
+	   background:transparent;
+	   } 
+
+</style>
+</head>
+<header id="top">
+<h2>Something we missed? Email us!</h2>
+</header>
+<body>
+   <br> <br>
+   <article>    
+      <button id="cmt_btn">Click here to see what our totally real and not fake fans are saying about Music Central!</button>
+      <br> <br>
+  
+      <span id="mySpan"></span>
+   </article>
+<div>
+<form action="mailto:scott.andrew@oaklandcc.edu" method="post">
+ <fieldset>
+  <legend>Your information</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name."/><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name."/><br><br>
+  <label for="zip">Zip</label>
+  <input type="text" id="zip" name="zip" placeholder="Zipcode" title="Must be 5 digits (99999) or 5 digits-4 digits(99999-9999)" pattern="\d{5}([-]\d{4})?"/><br><br>
+ <h3>Email, Phone, Website:</h3>
+ <label for="email">Your email address:</label><br><br>
+ <input type="email" id="email" required /><br><br>
+ <label for="link">Your Website:</label><br><br>
+ <input type="url" id="link" list="links" pattern="https?://.+" /><br><br>
+ <label for="phone">Your Phone Number:</label><br><br>
+ <input type="tel" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required /><br><br>
+ <input type="submit" id="submit" value="Submit"><br><br>
+  </fieldset>
+  <iframe width='270' height='166' marginheight='0' marginwidth='0' frameborder='0' scrolling='no' comment='/*defined*/' 
+  src='https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjp0cnVlLCJ3LTExIjp0cnVlLCJ3LTEzIjp0cnVlLCJ3LTE0IjpmYWxzZSwidy0xNSI6ZmFsc2UsInctMTEwIjpmYWxzZSwidy13aWR0aC0wIjp0cnVlLCJ3LXdpZHRoLTEiOmZhbHNlLCJ3LXdpZHRoLTIiOmZhbHNlLCJ3LTE2IjoiMjRweCIsInctMTkiOiI0OCIsInctMTciOiIxNiIsInctMjEiOnRydWUsImJnaW1hZ2UiOi0xLCJiZ2ltYWdlU2V0IjpmYWxzZSwidy0yMWMwIjoiI2ZmZmZmZiIsInctMCI6dHJ1ZSwidy0zIjp0cnVlLCJ3LTNjMCI6IiMzNDM0MzQiLCJ3LTNiMCI6IjEiLCJ3LTYiOiIjMzQzNDM0Iiwidy0yMCI6dHJ1ZSwidy00IjoiIzAwN2RiZiIsInctMTgiOmZhbHNlLCJ3LXdpZHRoLTJjLTAiOiIzMDAiLCJ3LTExNSI6dHJ1ZX0=&lang=en&cityid=4088'>
+  </iframe>
+</form>
+</div>
+</body>
+<footer>
+<nav><a class="red" href="home.html">Home</a> 
+<a class="red" href="theory.html">Learn Music Theory</a> 
+<a class="red" href="instruments.html">Learn About Instruments</a> 
+<a class="red" href="history.html">Learn About Music History</a> 
+</nav>
+<nav><a class="red" href="#top">Top of Page</a></nav>
+</footer>
+</html>

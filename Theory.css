@@ -1,0 +1,73 @@
+*{box-sizing:border-box;}
+
+body{text-align:justify;
+     background-image:url("Assets/parchment.jpg")}
+	 
+header{text-align:center;
+       background-image:linear-gradient(to right, blue, tan);
+       height:5em;
+	   width:100%;
+	   color:antiquewhite;
+	   transition:width 3s;}
+	   
+	   a{color:red;}	   
+	   
+header:hover{width:50%;}
+
+a:hover{color:fuchsia;}
+             
+	   
+h1{border:22px outset maroon;}
+
+h2{text-decoration:underline;
+color:purple;}
+
+h3{border:5px outset maroon;
+   border-radius:25px;
+   margin-right:85%;
+   font-style:italic;
+   color:purple;
+   background-color:antiquewhite;
+   text-align:center;}
+
+p{font-weight:bold;
+font-family:arial;}
+
+iframe{width:560;
+       height:315;
+border:5px solid red;
+box-shadow:10px 5px 5px gray;
+border-radius:35px;}
+
+table{border:5px solid black;
+      width:50%;
+	  text-align:center;}
+
+th, td{border:2px solid gray;
+       padding:20px;}
+
+td{font-weight:bold;}
+
+footer{background-color:black;
+       height:5em;
+	   width:100%;
+	   text-align:center;}
+	   
+
+.table2{border:none;}
+
+.red{background-color:maroon;
+color:green;}
+
+.blue{background-color:lightblue;}
+
+.black{border:2px outset black;}
+
+.size{height:200px;
+        width:200px;
+		box-shadow:10px 5px 5px gray;}
+		
+.green{background-color:forestgreen;}
+		
+.yellow{background-color:yellow;
+color:purple;}

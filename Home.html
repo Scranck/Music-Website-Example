@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="scripts/Home.js"></script>
+<style>
+
+*{box-sizing:border-box;}
+
+body{background-image:linear-gradient(to bottom, black, gray);
+     background-repeat:no-repeat;
+	 height:60em;
+     color:red;
+	 }
+	 
+header{background-image:linear-gradient(to right, black, green);
+       padding:1em;
+	   text-align:center;
+	   height:6em;
+	   margin-bottom:1em;}
+	 
+h2{color:fuchsia;}
+	 
+.row{display:flex;}
+
+.column{padding:1em;
+        height:30em;}
+
+.column.side1{flex-direction:column;
+              background-color:black;
+			  padding:1em;
+			  font-size:1em;
+			  flex:1;}
+			  
+.column.side2{flex:1;
+              background-color:black;}
+			  
+img{max-width:65%;
+    padding:1.5em;
+	background-color:blue;
+	border:.3em solid fuchsia;
+	border-radius:2em;
+	margin-top:1em;}
+	
+a{display:flex;
+  justify-content:center;
+  color:fuchsia;
+  background-color:green;
+  text-decoration:none;
+  margin:.5em;
+  padding:1em;
+  border:10px solid red;
+  border-radius:1em;
+  font-weight:bold;}
+  
+.column.middle{border-left:2px solid green;
+               border-right:2px solid green;
+			   overflow:auto;
+			   flex:3;
+			   background-color:black;
+			  }
+			   
+p{column-count:2;
+  text-align:justify;
+  font-weight:bold;}
+  
+footer{margin-top:10px;
+       background-image:linear-gradient(to right, black, blue);
+	   padding:1em;
+	   text-align:center;
+	   height:6em;}
+	   
+	   
+@media only screen and (max-width:600px){
+[class="row"]{flex-direction:column;}
+p{column-count:1;}
+[class="column.side2"]{order:2;}
+[class="column.middle"]{order:3;}
+}
+</style>
+</head>
+<header>
+  <h2 id="mainHeading">Welcome to Music Central!</h2>
+</header>
+<body>
+
+<audio id="Spring">
+  <source src="Assets/VivaldiSpring.oga" type="audio/oga">
+</audio>
+<main class="row">
+  <nav class="column side1">
+   <a id="history" onmouseover="musicHistory()" onmouseout="endMusicHistory()" href="history.html">Music History</a>  
+   <a id="instruments" onmouseover="instruments()" onmouseout="endInstruments()" href="instruments.html">Learn to Play Music</a>
+   <a id="theory" onmouseover="theory()" onmouseout="endTheory()" href="theory.html">Learn Music Theory</a>
+   <a id="contact" onmouseover="contact()" onmouseout="endContact()" href="contact.html">Contact Us</a>
+  </nav>
+<article class="column middle">
+ <p>Welcome to Music Central, a website designed for musicians of all calibers.  If you are a beginner, it is reccommended you thoroughly study our Music Theory and Instruments sections to further your musical knowledge.
+ If you are not new to music and you generally would like to know more about it, check our Music History section for a brief rundown of music through the ages.  Our music theory section gives a foundation for understanding
+ key signatures, time signatures, intervals, among other concepts. If you are a history buff, you'll enjoy our sections on the following eras: Prehistory, Medieval, Renaissance, Baroque, Classical, Romantic, Early 20th Century,
+ Country, Blues, Jazz, Rock, Metal, and Electronic music.
+ </p>
+</article>
+  <aside class="column side2">
+     <img onmouseover="setRock()"  onmouseout="endRock()" src="assets/rockband.jpg">
+	 <img onmouseover="setClassical()" onmouseout="endClassical()" src="assets/baroque.jpg">
+
+   <p>Click the Images!</p>
+</aside>
+</main>
+
+<footer>
+  
+</footer>
+
+</body>
+</html>
